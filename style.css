@@ -1,0 +1,135 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4b0082, #6a0dad);
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Header futurista */
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: rgba(75, 0, 130, 0.6);
+    box-shadow: 0 0 20px #9b30ff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #d1c4e9;
+}
+
+/* Navegação */
+nav {
+    background: rgba(75, 0, 130, 0.8);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 0 10px #9b30ff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffccff;
+}
+
+/* Seções */
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #9b30ff;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #dda0dd;
+    border-bottom: 2px solid #dda0dd;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+/* Projetos */
+.projeto {
+    background: rgba(75, 0, 130, 0.5);
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #9b30ff;
+}
+
+.projeto a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #ffccff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.projeto a:hover {
+    color: #ffffff;
+}
+
+/* Formulário */
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.1);
+    color: #e0e0e0;
+}
+
+form button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #9b30ff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #dda0dd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(75,0,130,0.8);
+    box-shadow: 0 -2px 10px #9b30ff;
+}
