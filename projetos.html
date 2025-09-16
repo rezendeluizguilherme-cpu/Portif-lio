@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo da página de projetos */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2e0249, #570a57, #a91079);
+            color: #fff;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 2px solid #a91079;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin: 0;
+            color: #fff;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .projects {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px #a91079;
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            color: #e0aaff;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            background: #a91079;
+            color: #fff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .card a:hover {
+            background: #7a0e57;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.2rem;
+            background: rgba(0, 0, 0, 0.6);
+            border-top: 2px solid #a91079;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meus Projetos</h1>
+    </header>
+
+    <section class="projects">
+        <div class="card">
+            <h3>Projeto 1</h3>
+            <p>Descrição breve do projeto. Tecnologias utilizadas e objetivo principal.</p>
+            <a href="#" target="_blank">Ver Projeto</a>
+        </div>
+
+        <div class="card">
+            <h3>Projeto 2</h3>
+            <p>Descrição breve do projeto. Tecnologias utilizadas e objetivo principal.</p>
+            <a href="#" target="_blank">Ver Projeto</a>
+        </div>
+
+        <div class="card">
+            <h3>Projeto 3</h3>
+            <p>Descrição breve do projeto. Tecnologias utilizadas e objetivo principal.</p>
+            <a href="#" target="_blank">Ver Projeto</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Desenvolvido por [Seu Nome]</p>
+    </footer>
+</body>
+</html>
