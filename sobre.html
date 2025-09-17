@@ -48,6 +48,28 @@
       margin-bottom: 1rem;
     }
 
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #fff;
+    }
+
+    .curso{
+        display: flex;
+        margin-bottom: 30px;
+    }
+
     footer {
       text-align: center;
       padding: 1.2rem;
@@ -78,10 +100,30 @@
       contribuindo em projetos desafiadores que me permitam crescer profissionalmente 
       e agregar valor por meio de soluções criativas e eficientes.
     </p>
-  </section>
+
+    <div class="curso">
+        <p style="margin-top: 55px; margin-right: 20px;">Aprovado em Aprendizagem de Programador Web.</p>
+        <img src="img/certificado.senai.png" alt="Foto certificado" width="200" onclick="abrirImagem(this.src)">
+    </div>
+
+    <div id="modal" class="modal" onclick="this.style.display='none'">
+        <img id="imgModal">
+    </div>
+
+    <script>
+        function abrirImagem(src) {
+            document.getElementById("imgModal").src = src;
+            document.getElementById("modal").style.display = "flex";
+    }
+    </script>
+
+    <p>Cursando Programação <strong>Full Stack</strong>.</p>
+
+    </section>
+
 
   <footer>
-    <p>&copy; 2025 - Desenvolvido por [Seu Nome]</p>
+    <p>&copy; 2025 - Desenvolvido por Luiz Guilherme</p>
   </footer>
 </body>
 </html>
